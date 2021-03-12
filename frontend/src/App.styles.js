@@ -1,8 +1,23 @@
-import styled from 'styled-components'
+import styled, {createGlobalStyle} from 'styled-components'
 
-export const AppStyles = styled.body`
-  height: 100vh;
+// export const AppStyles = styled.body`
+//   height: 100vh;
+//   font-family: 'Barlow Semi Condensed', sans-serif;
+//   background-image: linear-gradient(180deg,hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+//   /* background-color:hsl(214, 47%, 23%); */
+// `
+
+export const AppStyles = createGlobalStyle`
+  html {
+     height: 100vh;
+  }
+  
+  body {
   font-family: 'Barlow Semi Condensed', sans-serif;
+  background-image: linear-gradient(180deg,hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    height:100%;
+  }
+}
 `
 
 
