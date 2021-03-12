@@ -1,0 +1,25 @@
+{
+  "short_name": "RPS",
+  "name": "Rock, Paper, Scissors",
+  "icons": [
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.svg",
+      "type": "image/svg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo.svg",
+      "type": "image/svg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "hsl(214, 47%, 23%)",
+  "background_color": "hsl(237, 49%, 15%)"
+}
