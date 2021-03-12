@@ -1,13 +1,22 @@
-import './App.css';
+import { AppStyles } from './App.styles'
+import Score from './components/Score'
+import ChoicesPage from './components/ChoicesPage'
+import ResultsPage from './components/ResultsPage'
+import Rules from './components/Rules'
 
 function App() {
+
   return (
-    <div className="App">
+    <AppStyles>
       {/* Score */}
+    <Score/>
       {/* Choices */}
+      <ChoicesPage/>
       {/* Results Page */}
+      <ResultsPage/>
       {/* Rules CTA */}
-    </div>
+      <Rules/>
+    </AppStyles>
   );
 }
 
