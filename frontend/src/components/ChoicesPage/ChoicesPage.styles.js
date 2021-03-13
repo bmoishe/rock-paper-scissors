@@ -5,8 +5,6 @@ display:flex;
 flex-direction: column;
   .pentagon {
     z-index:-1;
-    /* position: absolute; */
-    /* top:-250px; */
     align-self:center;
   }
   .pentagon > img {
@@ -14,7 +12,6 @@ position: relative;
     top:-350px;
     left: 20px;
     z-index:-1;
-    /* fill: hsl(214, 47%, 23%); */
   }
   .choices-first-layer {
     display:flex;
