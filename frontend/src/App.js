@@ -7,6 +7,8 @@ import { useState, Fragment } from 'react'
 
 function App() {
   const [ displayRules, setDisplayRules ] = useState(false)
+  const [ displayResults, setDisplayResults ] = useState(true)
+  const [ choice, setChoice ] = useState(null)
   function handleClick() {
     setDisplayRules(true)
   }
@@ -20,9 +22,13 @@ function App() {
       {/* Score */}
       <Score/>
       {/* Choices */}
-      <ChoicesPage/>
+      <ChoicesPage setChoice={setChoice}/>
+      
       {/* Results Page */}
-      <ResultsPage/>
+      {
+        displayResults && <ResultsPage choice={choice}/>
+      }
+      
       {/* Rules CTA */}
       <button onClick={() => handleClick()}>Rules</button>
     </Fragment>
