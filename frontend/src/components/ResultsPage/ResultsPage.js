@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { ResultsPageStyles } from './ResultsPage.styles'
 import Rps from '../Rps'
 function ResultsPage(props) {
