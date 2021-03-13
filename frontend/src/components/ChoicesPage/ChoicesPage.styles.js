@@ -4,10 +4,10 @@ export const ChoicesPageStyles = styled.div(() => css`
 display:flex;
 flex-direction: column;
   .pentagon {
-    z-index:-1;
     align-self:center;
   }
   .pentagon > img {
+    z-index:-1;
 position: relative;
     top:-350px;
     left: 20px;
@@ -21,18 +21,24 @@ position: relative;
     display:flex;
     justify-content:space-around;
     margin-top:30px;
-    margin-bottom:80px;
-
+    margin-bottom:95px;
   }
   
   .choices-third-layer {
     display:flex;
     justify-content:space-around;
   }
-  .rock {
+  .paper {
     margin-left:100px;
   }
-  .paper {
+  /* .rock {
+    margin-left:100px;
+  }
+  .paper { 
+    margin-right:100px;
+  } */
+  .spock { 
+    /* spock */
     margin-right:100px;
   }
 `)

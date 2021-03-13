@@ -7,8 +7,11 @@ import { useState, Fragment } from 'react'
 
 function App() {
   const [ displayRules, setDisplayRules ] = useState(false)
-  const [ displayResults, setDisplayResults ] = useState(true)
+  const [ displayResults, setDisplayResults ] = useState(false)
   const [ choice, setChoice ] = useState(null)
+  const [ computerChoice, setComputerChoice ] = useState(null)
+  const [ score, setScore ] = useState(0)
+  const [ result, setResult ] = useState('')
   function handleClick() {
     setDisplayRules(true)
   }
@@ -20,13 +23,14 @@ function App() {
         <RulesModal setDisplayRules={setDisplayRules}/>
       }
       {/* Score */}
-      <Score/>
+      <Score score={score}/>
       {/* Choices */}
-      <ChoicesPage setChoice={setChoice}/>
-      
+      {!displayResults &&
+        <ChoicesPage setScore={setScore} score={score} setResult={setResult} setDisplayResults={setDisplayResults} setComputerChoice={setComputerChoice} setChoice={setChoice} computerChoice={computerChoice} choice={choice}/>
+      }
       {/* Results Page */}
       {
-        displayResults && <ResultsPage choice={choice}/>
+        displayResults && <ResultsPage result={result} computerChoice={computerChoice} setDisplayResults={setDisplayResults} choice={choice}/>
       }
       
       {/* Rules CTA */}

@@ -1,11 +1,4 @@
-import styled, {createGlobalStyle} from 'styled-components'
-
-// export const AppStyles = styled.body`
-//   height: 100vh;
-//   font-family: 'Barlow Semi Condensed', sans-serif;
-//   background-image: linear-gradient(180deg,hsl(214, 47%, 23%), hsl(237, 49%, 15%));
-//   /* background-color:hsl(214, 47%, 23%); */
-// `
+import {createGlobalStyle} from 'styled-components'
 
 export const AppStyles = createGlobalStyle`
   html {
@@ -19,6 +12,7 @@ export const AppStyles = createGlobalStyle`
   }
 }
 `
+
 
 
 /* The designs were created to the following widths:
