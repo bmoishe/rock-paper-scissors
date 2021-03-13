@@ -1,6 +1,7 @@
 import styled, {css} from 'styled-components'
 
 export const ScoreStyles = styled.div((props) => css`
+
   display: flex;
   flex-direction: row;
   border:2px hsl(217, 16%, 45%) solid;
@@ -9,7 +10,8 @@ export const ScoreStyles = styled.div((props) => css`
   justify-content: space-between;
   border-radius: 20px;
   height:120px;
-  h1 {
+
+  .title {
     display: flex;
     flex-direction: column;
     color:white;
@@ -17,25 +19,28 @@ export const ScoreStyles = styled.div((props) => css`
     align-self: center;
     line-height: 21px;
   }
-`)
 
-export const ScoreCardStyles = styled.div((props) => css`
-  display: flex;
-  flex-direction: column;
-  background-color:white;
-  height:120px;
-  width:160px;
-  align-self: center;
-  border-radius:20px;
   .score-container {
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    border-radius:20px;
+    padding:15px 40px;
   }
-  h2 {
+
+  .score-title {
     color:hsl(229, 64%, 46%);
     align-self:center;
+    margin:0;
+    font-weight:600px;
+    letter-spacing: 2px;
   }
+
   .score {
-    font-size: 50px;
+    font-size: 70px;
     align-self:center;
+    color: hsl(229, 25%, 31%);
+    margin: 0;
+    line-height:60px
   }
 `)

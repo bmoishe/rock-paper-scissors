@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components'
+import styled, { createGlobalStyle, css } from 'styled-components'
 
 export const AppStyles = createGlobalStyle`
   html {
@@ -14,6 +14,29 @@ export const AppStyles = createGlobalStyle`
 `
 
 
+export const RulesButtonStlyes = styled.div(() => css`
+text-align:right;
+margin-right: 80px;
+position: absolute;
+right:10px;
+bottom: 50px;
+
+  button {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 1px solid white;
+    text-shadow: 0px 0px 0px transparent;
+    border-radius: 7px;
+    color:white;
+    font-size:24px;
+    padding:7px 35px;
+    font-weight:600px;
+    letter-spacing: 2px;
+  }
+
+`)
 
 /* The designs were created to the following widths:
 

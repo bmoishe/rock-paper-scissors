@@ -1,11 +1,13 @@
-import { ScoreStyles, ScoreCardStyles } from './Score.styles'
+import { ScoreStyles } from './Score.styles'
 
 function Score(props) {
-const score = 12
   return (
     <ScoreStyles>
       <h1 className='title'><span>ROCK</span> <span>PAPER</span> <span>SCISSORS</span><span>LIZZARD</span> <span>SPOCK</span></h1>
-      <ScoreCardStyles><div className='score-container'><h2>SCORE</h2> <div className='score'>{props.score}</div></div></ScoreCardStyles>
+        <div className='score-container'>
+          <h2 className='score-title'>SCORE</h2>
+          <h2 className='score'>{props.score}</h2>
+        </div>
     </ScoreStyles>
   );
 }

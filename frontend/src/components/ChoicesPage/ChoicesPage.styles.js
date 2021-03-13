@@ -9,8 +9,8 @@ flex-direction: column;
   .pentagon > img {
     z-index:-1;
 position: relative;
-    top:-350px;
-    left: 20px;
+    top:-399px;
+    left: 69px;
     z-index:-1;
   }
   .choices-first-layer {
@@ -20,8 +20,8 @@ position: relative;
   .choices-second-layer {
     display:flex;
     justify-content:space-around;
-    margin-top:30px;
-    margin-bottom:95px;
+    margin-top:15px;
+    margin-bottom:50px;
   }
   
   .choices-third-layer {
@@ -31,14 +31,7 @@ position: relative;
   .paper {
     margin-left:100px;
   }
-  /* .rock {
-    margin-left:100px;
-  }
-  .paper { 
-    margin-right:100px;
-  } */
   .spock { 
-    /* spock */
     margin-right:100px;
   }
 `)

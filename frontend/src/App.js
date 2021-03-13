@@ -1,4 +1,4 @@
-import { AppStyles } from './App.styles'
+import { AppStyles, RulesButtonStlyes } from './App.styles'
 import Score from './components/Score'
 import ChoicesPage from './components/ChoicesPage'
 import ResultsPage from './components/ResultsPage'
@@ -34,7 +34,7 @@ function App() {
       }
       
       {/* Rules CTA */}
-      <button onClick={() => handleClick()}>Rules</button>
+      <RulesButtonStlyes onClick={() => handleClick()}><button>RULES</button></RulesButtonStlyes>
     </Fragment>
   );
 }

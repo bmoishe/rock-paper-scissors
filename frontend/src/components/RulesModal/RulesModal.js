@@ -2,6 +2,7 @@ import { RulesModalStyles, RulesModalBackgroundStyles } from './RulesModal.style
 import Rps from '../Rps'
 import logo from '../../logo.svg'
 import rules from '../../images/image-rules-bonus.svg'
+import close from '../../images/icon-close.svg'
 import { Fragment } from 'react'
 function RulesModal(props) {
 
@@ -9,8 +10,10 @@ function RulesModal(props) {
     <Fragment>
       <RulesModalBackgroundStyles/>
       <RulesModalStyles>
-        <h1>Rules</h1>
-        <button onClick={() => props.setDisplayRules(false)}> <img src='' alt='Close'/></button>
+        <header>
+          <h1>Rules</h1>
+          <button onClick={() => props.setDisplayRules(false)}> <img src={close} alt='Close'/></button>
+        </header>
         <img src={rules} alt='rules'/>
       </RulesModalStyles>
     </Fragment>
