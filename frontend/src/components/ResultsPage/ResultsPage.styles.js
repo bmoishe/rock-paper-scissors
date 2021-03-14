@@ -5,6 +5,7 @@ export const ResultsPageStyles = styled.div(() => css`
   color: white;
   align-items:center;
   justify-content:center;
+  margin-top:150px;
   .house-pick {
     align-self: center;
     margin-left: 100px;

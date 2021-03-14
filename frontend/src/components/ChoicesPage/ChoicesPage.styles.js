@@ -3,6 +3,7 @@ import styled, {css} from 'styled-components'
 export const ChoicesPageStyles = styled.div(() => css`
 display:flex;
 flex-direction: column;
+margin-top:100px;
   .pentagon {
     align-self:center;
   }
