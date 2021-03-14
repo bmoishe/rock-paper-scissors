@@ -6,9 +6,9 @@ export const AppStyles = createGlobalStyle`
   }
   
   body {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  background-image: linear-gradient(180deg,hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    font-family: 'Barlow Semi Condensed', sans-serif;
     height:100%;
+    background-image:  radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
   }
 }
 `

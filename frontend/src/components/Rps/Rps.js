@@ -7,19 +7,19 @@ import lizard from '../../images/icon-lizard.svg'
 function Rps(props) {
   function renderRPS() {
     if(props.choice === 'scissors') {
-      return <RpsStyles alt={'scissors'} src={scissors} colorStart='hsl(39, 89%, 49%)' colorEnd='hsl(40, 84%, 53%)'/>
+      return <RpsStyles selection={props.selection} colorStart='hsl(39, 89%, 49%)' colorEnd='hsl(40, 84%, 53%)'> <img className='rps' alt={'scissors'} src={scissors} /></RpsStyles>
     }
     if(props.choice === 'spock') {
-      return  <RpsStyles alt={'spock'} src={spock} colorStart='hsl(189, 59%, 53%)' colorEnd='hsl(189, 58%, 57%)'/>
+      return  <RpsStyles selection={props.selection} colorStart='hsl(189, 59%, 53%)' colorEnd='hsl(189, 58%, 57%)'><img className='rps' alt={'spock'} src={spock} /></RpsStyles>
     }
     if(props.choice === 'paper') {
-      return <RpsStyles alt={'paper'} src={paper} colorStart='hsl(230, 89%, 62%)' colorEnd='hsl(230, 89%, 65%)'/>
+      return <RpsStyles selection={props.selection} colorStart='hsl(230, 89%, 62%)' colorEnd='hsl(230, 89%, 65%)'><img className='rps' alt={'paper'} src={paper} /></RpsStyles>
     }
     if(props.choice === 'lizard') {
-      return <RpsStyles alt={'lizard'} src={lizard} colorStart='hsl(261, 73%, 60%)' colorEnd='hsl(261, 72%, 63%)'/>
+      return <RpsStyles selection={props.selection} colorStart='hsl(261, 73%, 60%)' colorEnd='hsl(261, 72%, 63%)'> <img className='rps' alt={'lizard'} src={lizard} /></RpsStyles>
     } 
     if(props.choice === 'rock') {
-      return<RpsStyles alt={'rock'} src={rock} colorStart='hsl(349, 71%, 52%)' colorEnd='hsl(349, 70%, 56%)'/>
+      return<RpsStyles selection={props.selection} colorStart='hsl(349, 71%, 52%)' colorEnd='hsl(349, 70%, 56%)'> <img className='rps' alt={'rock'} src={rock}/></RpsStyles>
     } else return
   }
 

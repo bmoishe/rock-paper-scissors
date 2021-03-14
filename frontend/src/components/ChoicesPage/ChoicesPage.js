@@ -39,24 +39,24 @@ async function generateResult(choice) {
       <div className='pentagon'>
         <div className='choices-first-layer'>
           <div className='scissors' onClick={() => handleClick('scissors')}>
-          <Rps choice={'scissors'}/>
+          <Rps selection choice={'scissors'}/>
           </div>
         </div>
         <div className='choices-second-layer'>
           <div className='spock' onClick={() => handleClick('spock')}>
-            <Rps choice={'spock'} />
+            <Rps selection choice={'spock'} />
           </div>
           <div className='paper' onClick={() => handleClick('paper')}>
-            <Rps choice={'paper'}/>
+            <Rps selection choice={'paper'}/>
           </div>
         </div>
         <div className='choices-third-layer'>
          
           <div className='lizard' onClick={() => handleClick('lizard')}>
-            <Rps choice={'lizard'} />
+            <Rps selection choice={'lizard'} />
           </div>
           <div className='rock' onClick={() => handleClick('rock')}>
-            <Rps choice={'rock'} />
+            <Rps selection choice={'rock'} />
           </div>
         </div>
         <img  src={pentagon} alt='pentagon'></img>
